@@ -1,0 +1,183 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #fff8e1, #ffe0b2);
+    color: #333;
+}
+
+/* Banner creativa */
+header .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.squarespace-cdn.com/content/v1/5c464d62da02bcc680937c18/1614630197368-KOT8M8EV5KK33Q8GPFP5/pasted+image+0.png')
+            center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #ff6f00;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 6px #000;
+}
+
+header p {
+    font-size: 1.3em;
+    text-shadow: 2px 2px 5px #000;
+}
+
+nav {
+    background-color: #ff6f00;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd54f;
+    text-decoration: underline;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Galería */
+.galeria h2 {
+    margin-bottom: 25px;
+    color: #d84315;
+    font-size: 1.8em;
+}
+
+.galeria .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria img {
+    width: 240px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Video */
+.video {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffecb3;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 620px;
+    box-shadow: 0 4px 10px rgba(255, 167, 38, 0.4);
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Formulario */
+.formulario {
+    background-color: #fff3e0;
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 25px;
+    border: 2px solid #ffa726;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.formulario h2 {
+    color: #e65100;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #6d4c41;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.formulario input[type='submit'] {
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario input[type='submit']:hover {
+    background-color: #fb8c00;
+}
+
+/* Footer */
+footer {
+    background-color: #ffe0b2;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    color: #5d4037;
+    font-size: 1em;
+    border-top: 3px solid #ff6f00;
+}
+
+/* Responsive para móviles */
+@media (max-width: 700px) {
+    .galeria .imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria img {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
